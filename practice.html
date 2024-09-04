@@ -4,34 +4,38 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> MeowShop</title>
+    <title>MeowShop</title>
     <link rel="icon" href="testlogo.png">
-
-    <style>
-        textarea {
-            resize: none;
-        }
-        .shop-button {
-            background-color: #FF4500; 
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 10px; 
-        }
-        .shop-button:hover {
-            background-color: #FF6347;
-        }
-    </style>
+    <link rel="stylesheet" href="./practice.css" />
 </head>
 
-<body bgcolor="black" style="color:beige;font-family:verdana">
-    <table border="0" width="1300" height="500" align="center" cellspacing="4" cellpadding="7" background="bg1.png">
+<body>
+    <div class="home">
+        <div class="nav-bar">
+            <img src="testlogo.png" width="50" alt="logo">
+            <ul class="nav-list">
+                <a href="practice.html" title="Go to Home" class="nav-link">Home</a>
+                <a href="#aboutus" title="Go to Home" class="nav-link">About</a>
+                <a href="#gallery" title="Go to Home" class="nav-link">Gallery</a>
+                <a href="#review" title="Go to Home" class="nav-link">Review</a>
+                <a href="#contactus" title="Go to Home" class="nav-link">Contact</a>
+            </ul>
+        </div>
+        <div class="home-content">
+            <div style="margin-top: 50px; margin-bottom: 50px;">
+                <h1 style="color:white;"><b>Purrrfect Haven</b></h1>
+                <h2 style="color:lightblue;"> <b>Lorem Ipsum</b></h2>
+                <h4 style="color:lightgoldenrodyellow;">
+                    <h5><i>"Neque porro quisquam est qui<br> dolorem ipsum quia dolor sit amet,
+                            consectetur,<br>adipisci velit..."</i></h5>
+                    "There is no one who loves pain itself,<br> who seeks after it and wants to have it,<br> simply
+                    because it is pain..."
+                </h4>
+            </div>
+            <a href="https://example.com/shop" class="shop-button">Shop Now</a>
+        </div>
+    </div>
+    <!-- <table border="0" width="1300" height="500" align="center" cellspacing="4" cellpadding="7" background="bg1.png">
         <tr height="50"></tr>
         <td width="580"><img src="testlogo.png" width="50" alt="logo"></td>
         <td align="center" width="150" height="50">
@@ -76,9 +80,9 @@
         <tr>
             <td width="1300" height="150"></td>
         </tr>
-    </table>
+    </table> -->
     <!-- Gallery -->
-    <div id="gallery">
+    <!-- <div id="gallery">
         <table border="0" width="1300" height="100" align="center" bgcolor="#0b1116">
             <tr>
                 <td>
@@ -113,10 +117,10 @@
                 <td align="center" width="400" height="500"><img src="catpic4.jpg" width="400" height="500"></td>
             </tr>
         </table>
-    </div>
+    </div> -->
     <!-- ABOUT US -->
 
-    <div id="aboutus">
+    <!-- <div id="aboutus">
         <table border="0" width="1300" height="100" align="center" bgcolor="#0b1116">
             <tr>
                 <td>
@@ -146,10 +150,10 @@
                 </td>
                 <td align="center" width="700" height="600"><img src="catlogo3.png" width="700" height="500"></td>
             </tr>
-    </div>
+    </div> -->
 
     <!-- CONTACT US -->
-    <div>
+    <!-- <div>
         <table border="0" width="1300" height="50" align="center" bgcolor="#101820">
             <tr>
                 <td>
@@ -183,7 +187,7 @@
             </tr>
 
         </table>
-        <!-- LAST PART -->
+       
         <table border:0; width="1300" height="30" align="center" bgcolor="#0b1116">
             <tr>
                 <td></td>
@@ -207,7 +211,7 @@
                 </td>
             </tr>
         </table>
-    </div>
+    </div> -->
 
 </body>
 
