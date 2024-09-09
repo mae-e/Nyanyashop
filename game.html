@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game nya nya</title>
+    <style>
+        body {
+            background-color: black;
+            border: 5px solid red;
+            width: 98vw;
+            height: 97vh;
+            display: block;
+        }
+
+        .block {
+            display: block;
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+        }
+
+        .contoller {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            bottom: 15px;
+            right: 20px;
+        }
+
+        .btn {
+            background-color: rgba(0, 0, 0, 0);
+            color: white;
+            border: 3px solid white;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(255, 255, 255);
+            color: rgb(27, 20, 237);
+            border: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="block" id="block-head"></div>
+
+    <div class="contoller">
+        <div class="btn-container">
+            <button class="btn" id="top">up</button>
+            <button class="btn" id="left">left</button>
+            <button class="btn" id="right">right</button>
+            <button class="btn" id="bottom">bottom</button>
+        </div>
+    </div>
+
+    <script>
+        let mytop = document.getElementById("top");
+        let myleft = document.getElementById("left");
+        let myright = document.getElementById("right");
+        let mybottom = document.getElementById("bottom");
+
+        let block = document.getElementById("block-head");
+
+        function moveUp() {
+            // Get the current top value (in pixels) and parse it as an integer
+            let currentTop = parseInt(block.style.top) || 0;
+            
+            // Subtract 10 from the current top value
+            block.style.top = (currentTop - 10) + 'px';
+        }
+
+        let moveDown = () => {
+            // Get the current top value (in pixels) and parse it as an integer
+            let currentTop = parseInt(block.style.top) || 0;
+            
+            // Subtract 10 from the current top value
+            block.style.top = (currentTop + 10) + 'px';
+        }
+
+        function moveLeft() {
+            // Get the current top value (in pixels) and parse it as an integer
+            let currentleft = parseInt(block.style.left) || 0;
+            
+            // Subtract 10 from the current top value
+            block.style.left = (currentleft - 10) + 'px';
+        }
+
+        function moveRight() {
+            // Get the current top value (in pixels) and parse it as an integer
+            let currentleft = parseInt(block.style.left) || 0;
+            
+            // Subtract 10 from the current top value
+            block.style.left = (currentleft + 10) + 'px';
+        }
+
+        mytop.addEventListener('click', moveUp);
+        myleft.addEventListener('click', moveLeft);
+        myright.addEventListener('click', moveRight);
+        mybottom.addEventListener('click', moveDown);
+    </script>
+</body>
+
+</html>
