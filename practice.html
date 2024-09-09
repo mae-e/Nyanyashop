@@ -4,210 +4,113 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> MeowShop</title>
+    <title>MeowShop</title>
     <link rel="icon" href="testlogo.png">
-
-    <style>
-        textarea {
-            resize: none;
-        }
-        .shop-button {
-            background-color: #FF4500; 
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 10px; 
-        }
-        .shop-button:hover {
-            background-color: #FF6347;
-        }
-    </style>
+    <link rel="stylesheet" href="./practice.css" />
 </head>
 
-<body bgcolor="black" style="color:beige;font-family:verdana">
-    <table border="0" width="1300" height="500" align="center" cellspacing="4" cellpadding="7" background="bg1.png">
-        <tr height="50"></tr>
-        <td width="580"><img src="testlogo.png" width="50" alt="logo"></td>
-        <td align="center" width="150" height="50">
-            <a href="practice.html" title="Go to Home"><button class="button"
-                    style="width:100;height:30;background-color: rgb(0, 0, 0);border:0; color:beige"><b><big>Home</big></b></button></a>
-        </td>
+<body>
+    <div class="home">
+        <div class="nav-bar horizontal-border-spacing ">
+            <img src="testlogo.png" width="50" alt="logo">
+            <ul class="nav-list">
+                <a href="practice.html" title="Go to Home" class="nav-link">Home</a>
+                <a href="#aboutus" title="Go to About US" class="nav-link">About</a>
+                <a href="#gallery" title="Go to Gallery" class="nav-link">Gallery</a>
+                <a href="#review" title="Go to Reivew" class="nav-link">Review</a>
+                <a href="#contactus" title="Go to Contact" class="nav-link">Contact</a>
+            </ul>
+        </div>
+        <div class="home-content horizontal-border-spacing vertical-border-spacing">
+            <div style="margin-top: 50px; margin-bottom: 50px;">
+                <h1 style="color:white;"><b>Purrrfect Haven</b></h1>
+                <h2 style="color:lightblue;"> <b>Lorem Ipsum</b></h2>
+                <h4 style="color:lightgoldenrodyellow;">
+                    <h5><i>"Neque porro quisquam est qui<br> dolorem ipsum quia dolor sit amet,
+                            consectetur,<br>adipisci velit..."</i></h5>
+                    "There is no one who loves pain itself,<br> who seeks after it and wants to have it,<br> simply
+                    because it is pain..."
+                </h4>
+            </div>
+            <a href="https://example.com/shop" class="shop-button">Shop Now</a>
+        </div>
+    </div>
+    <div id="gallery" class="column center horizontal-border-spacing vertical-border-spacing">
+        <div class="title dark-background">GALLERY</div>
+        <div class="gallery dark-background">
+            <div class="gallery-item">
+                <video width="400" height="500" autoplay muted loop>
+                    <source src="catvid1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="gallery-item">
+                <video width="400" height="500" autoplay muted loop>
+                    <source src="catvid2.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="gallery-item">
+                <img src="catpic3.png" width="400" height="500">
+            </div>
+            <div class="gallery-item">
+                <img src="catpic4.jpg" width="400" height="500">
+            </div>
+        </div>
+    </div>
+    <div id="aboutus" class="column center horizontal-border-spacing vertical-border-spacing">
+        <div class="title dark-background">About US</div>
+        <div class="row dark-background horizontal-border-spacing-large vertical-border-spacing">
+            <div class="column vertical-border-spacing">
+                <h2 class="sky-blue-text">What is Lorem Ipsum?</h2>
+                <p class="font-just"><b>Lorem Ipsum</b>is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                    has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                    galley of type and scrambled it to make a type specimen book. It has survived not only five
+                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It
+                    was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software like Aldus PageMaker including
+                    versions of Lorem Ipsum. </p>
+            </div>
+            <img src="catlogo3.png" height="500">
+        </div>
+    </div>
 
-        <td align="center" width="150" height="50">
-            <a href="#aboutus" title="Go to About Us"><button class="button"
-                    style="width:100;height:30;background-color: rgb(0, 0, 0);border:0; color:beige"><b><big>About</big></b></button></a>
-        </td>
+    <div id="contactus" class="column center horizontal-border-spacing vertical-border-spacing">
+        <div class="title dark-background">CONTACT US</div>
+        <div class="row form-content horizontal-border-spacing-large vertical-border-spacing">
+                 <form class="form-content horizontal-border-spacing">
+                    <p>Username:</p>
+                    <input type="text">
+                    <p>Email:</p>
+                    <input type="email"><br><br>
+                    <input type="submit">
+                 </form>
+                 <div class="horizontal-border-spacing">
+                    <p>Comment:</p>
+                    <div><textarea rows="12" cols="40"></textarea></div>
+                 </div>
+                    
+                    
+                
+        </div>
+    </div>
+          
+    <div class="column center" style="color: aliceblue;">
+        <b>MEOWSHOP</b><br>
+        <b>example@gmail.com</b>
+        <b>Phone number</b>
+        <b>Address</b>
+    </div>
 
-        <td align="center" width="150" height="50">
-            <a href="#gallery" title="Go to Gallery"><button class="button"
-                    style="width:100;height:30;background-color: rgb(0, 0, 0);border:0; color:beige"><b><big>Gallery</big></b></button></a>
-        </td>
-
-        <td align="center" width="150" height="50">
-            <a href="#review" title="Go to Review"><button class="button"
-                    style="width:100;height:30;background-color: rgb(0, 0, 0);border:0; color:beige"><b><big>Review</big></b></button></a>
-        </td>
-
-        <td align="center" width="150" height="50">
-            <a href="#contactus" title="Go to Contact Us"><button class="button"
-                    style="width:100;height:30;background-color: rgb(0, 0, 0);border:0; color:beige"><b><big>Contact</big></b></button></a>
-        </td>
+    <footer>
+    <div class="social-icons" >
         
-        <tr height="200" width="1300">
-            <td width="1300 colspan=" 9" align="left">
-                <div style="margin-top: 50px; margin-bottom: 50px;">
-                <h1 align:"left" style="color:white;"><b>Purrrfect Haven</b></h1>
-                <h2 align:"left" style="color:lightblue;"> <b>Lorem Ipsum</b></h2>
-                <h4 align:"left" style="color:lightgoldenrodyellow;"><h5><i>"Neque porro quisquam est qui<br> dolorem ipsum quia dolor sit amet,
-                                consectetur,<br>adipisci velit..."</i></h5>
-                                "There is no one who loves pain itself,<br> who seeks after it and wants to have it,<br> simply
-                                because it is pain..."</h4>
-                </div>                
-                <a href="https://example.com/shop" class="shop-button">Shop Now</a> 
-            </td>   
-        </tr>
-        
-        <tr>
-            <td width="1300" height="150"></td>
-        </tr>
-    </table>
-    <!-- Gallery -->
-    <div id="gallery">
-        <table border="0" width="1300" height="100" align="center" bgcolor="#0b1116">
-            <tr>
-                <td>
-                    <center>
-                        <p stlye="width:250;height:30;background-color:#0b1116;border:0;color:white">
-                            <h2><b>GALLERY</b></h2>
-                        </p>
-                    </center>
-                </td>
-            </tr>
-        </table>
-        <table style="border:0;border-collapse:collapse" width="1300" height="300" align="center" bgcolor="#101820">
-            <tr>
-                <td>
-                    <video width="400" height="500" autoplay muted loop>
-                        <source src="catvid1.mp4" type="video/mp4">
-                    </video>
-                </td>
-                <td align="center" width="400" height="500"><img src="catpic1.jpeg" width="400" height="500"></td>
-                <td>
-                    <video width="400" height="500" autoplay muted loop>
-                        <source src="catvid2.mp4" type="video/mp4">
-                    </video>
-                </td>
-            </tr>
+        <a href="https://facebook.com" target="_blank" title="Facebook"> <img src="facebook_logo.png"></a> 
+        <a href="https://instagram.com" target="_blank" title="Instagram"> <img src="instagram.png"></a> 
+        <a href="https://youtube.com" target="_blank" title="Youtube"> <img src="youtube.png"></a>
 
-            <tr>
-                <td align="center" width="400" height="500"><img src="catpic3.png" width="400" height="500"></td>
-                <td>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/y0sF5xhGreA?si=Jv28nfcx28saZ-MQ&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </td>
-                <td align="center" width="400" height="500"><img src="catpic4.jpg" width="400" height="500"></td>
-            </tr>
-        </table>
     </div>
-    <!-- ABOUT US -->
+    </footer>
 
-    <div id="aboutus">
-        <table border="0" width="1300" height="100" align="center" bgcolor="#0b1116">
-            <tr>
-                <td>
-                    <center>
-                        <p stlye="width:250;height:30;background-color:#0b1116;border:0;color:white">
-                            <h2><b>ABOUT US</b></h2>
-                        </p>
-                    </center>
-                </td>
-            </tr>
-        </table>
-
-        <table border="0" width="1300" height="500" align="center" bgcolor="#0b1116">
-            <tr>
-                <td rowspan="2" width="100" height="500"></td>
-                <td width="500" height="500">
-                    <p style="color:rgb(221, 178, 178)"><h2 style="color:skyblue">What is Lorem Ipsum?</h2>
-                        <h4 align="justify"><b>Lorem Ipsum </b>is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                            has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            galley of type and scrambled it to make a type specimen book. It has survived not only five
-                            centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It
-                            was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                            passages, and more recently with desktop publishing software like Aldus PageMaker including
-                            versions of Lorem Ipsum. </h4>
-                        
-                    </p>
-                </td>
-                <td align="center" width="700" height="600"><img src="catlogo3.png" width="700" height="500"></td>
-            </tr>
-    </div>
-
-    <!-- CONTACT US -->
-    <div>
-        <table border="0" width="1300" height="50" align="center" bgcolor="#101820">
-            <tr>
-                <td>
-                    <center>
-                        <p style="width:250;height:30;background-color:#0b1116;border:0;color:white">
-                            <h2 id="contactus"><b>CONTACT US</b></h2>
-                        </p>
-                    </center>
-                </td>
-            </tr>
-        </table>
-
-        <table border="0" width="1300" height="350" align="center" bgcolor="#101820">
-            <tr>
-                <td width="300"></td>
-                <td>
-                    <form>
-                        <p align="left">Username</p>
-                        <input type="text"></br>
-                        <p align="left">Email</p>
-                        <input type="email"></br></br></br>
-                        <input type="submit">
-                    </form>
-                </td>
-                <td align="left">
-                        <p align="left">Comment</p>
-                    <textarea rows="12" cols="50">
-                </textarea>
-                </td>
-                <td width="300"></td>
-            </tr>
-
-        </table>
-        <!-- LAST PART -->
-        <table border:0; width="1300" height="30" align="center" bgcolor="#0b1116">
-            <tr>
-                <td></td>
-            </tr>
-        </table>
-
-        <table border:0; width="1300" height="30" align="center">
-            <tr>
-                <td>
-                    <p align="center"><b>MEOWSHOP</b></p>
-                    <p align="center"><b>example@gmail.com</p>
-                    <p align="center"><b>Phone number</p>
-                    <p align="center"><b>Address</b></p>
-
-
-                    <pre align="center" width="40">
-<a href="#facebookpage" title="Facebook"> <img src="facebook_logo.png" width="40" height="40"></a>   <a href="#instagrampage" title="Instagram"> <img src="instagram.png" width="40" height="40"></a>  <a href="#youtubepage" title="Youtube"> <img src="youtube.png" width="40" height="40"></a>
-            </pre>
-
-                    <p align="center" style="color:grey">2024 COPYMEOW</p>
-                </td>
-            </tr>
-        </table>
-    </div>
+     <p align="center" style="color:grey">2024 MEOWCOPY</p>
 
 </body>
 
